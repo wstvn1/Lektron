@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lektron - Toko Lampu Berkualitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-lightbulb"></i>
+                <span>LEKTRON</span>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#products" class="nav-link">Produk</a></li>
+                <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            
+            <div class="navbar-right">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Pencahayaan Berkualitas Tinggi</h1>
+            <p>Temukan koleksi lampu terbaik untuk rumah dan kantor Anda</p>
+            <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                Belanja Sekarang
+            </button>
+        </div>
+    </section>
+
+    <!-- PRODUK SECTION -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2>Produk Pilihan</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Produk akan dimuat dari JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Tentang Lektron</h2>
+            <p>Kami menyediakan lampu berkualitas tinggi dengan harga terjangkau untuk memenuhi kebutuhan pencahayaan Anda. Produk kami telah dipercaya oleh ribuan pelanggan setia.</p>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Keranjang Belanja</h2>
+                <span class="close-cart" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Item keranjang akan ditampilkan di sini -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: Rp <span id="cartTotal">0</span></strong>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+                <button class="btn btn-secondary btn-block" id="continueShopping">Lanjut Belanja</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Lektron - Toko Lampu Berkualitas. Semua Hak Dilindungi.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
